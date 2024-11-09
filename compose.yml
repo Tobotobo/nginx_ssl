@@ -6,6 +6,6 @@ services:
       - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
-      - ./home:/usr/share/nginx/html
+      - ./html:/usr/share/nginx/html
       - /var/opt/pve-vm/server-cert/server.crt:/server.crt:ro
       - /var/opt/pve-vm/server-cert/server.key:/server.key:ro
